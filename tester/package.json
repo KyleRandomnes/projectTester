@@ -2,7 +2,7 @@
   "name": "tester",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kylerandomnes.github.io/projecttester",
+  "homepage": "https://kylerandomnes.github.io/projectTester",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
