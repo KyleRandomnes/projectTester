@@ -22,7 +22,7 @@ function Navbar({ cart, isCartOpen, toggleCartDropdown }) {
                       alt={`${item.size} Shirt`}
                       className="Product-icon"
                     />
-                    Size: {item.size}, Quantity: {item.quantity}
+                    Size: {item.size}, Quantity: {item.quantity}, Total Price: ${item.quantity * 75.0}
                   </li>
                 ))}
               </ul>
