@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column; /* Ensures header and text are stacked vertically */
+  padding: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 15px; /* Adds space below the header */
+}
+
+.Product-container {
+  display: flex;
+  align-items: flex-start; /* Ensures image and text align vertically at the top */
+}
+
+.Product-image {
+  width: 350px; /* Adjust image size */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between image and text */
+}
+
+.Product-info {
+  max-width: 600px; /* Limit the width of the text container */
+}
+
+p {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+/* Style for size buttons */
+.Size-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.size-btn {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #f4f4f4; /* Default background */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.size-btn.selected {
+  background-color: #000; /* Background color when selected */
+  color: white; /* Text color when selected */
+  border-color: #000; /* Border color when selected */
+}
+
+/* Hover effect */
+.size-btn:hover {
+  background-color: #ddd;
+}
+
+/* Disable buttons when needed */
+.size-btn:disabled {
+  background-color: #f0f0f0;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+
+.Quantity-container {
+  display: flex;
+  align-items: center; /* Aligns slider and input in a row */
+  gap: 10px; /* Adds space between the slider and input box */
+  margin-top: 10px;
+}
+
+/* Style for the entire slider */
+.Quantity-slider {
+  -webkit-appearance: none; /* Removes default styling on webkit browsers (Chrome, Safari) */
+  appearance: none;
+  width: 80%; /* Adjust width as needed */
+  height: 8px; /* Thickness of the slider track */
+  background: black; /* Black track */
+  border-radius: 5px; /* Rounded edges for the track */
+  outline: none; /* Remove default outline */
+  transition: background 0.3s ease-in-out; /* Smooth transition on hover/focus */
+}
+
+/* Style for the slider thumb (the ball) */
+.Quantity-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Removes default thumb style in webkit browsers */
+  appearance: none;
+  width: 20px; /* Size of the thumb */
+  height: 20px; /* Size of the thumb */
+  border-radius: 50%; /* Makes the thumb round */
+  background: black; /* Color of the thumb */
+  cursor: pointer; /* Makes it look clickable */
+  border: none; /* Removes any default border */
+}
+
+.Quantity-slider::-moz-range-thumb {
+  width: 20px; /* Size of the thumb for Firefox */
+  height: 20px; /* Size of the thumb */
+  border-radius: 50%; /* Makes the thumb round */
+  background: black; /* Color of the thumb */
+  cursor: pointer; /* Makes it look clickable */
+  border: none; /* Removes any default border */
+}
+
+.Quantity-input {
+  width: 60px;
+  padding: 10px;
+  font-size: 1.2em;
+  text-align: center; /* Center the number in the box */
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.add-to-cart-btn {
+  background-color: #007bff;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Cart {
+  margin-top: 20px;
+  text-align: left;
 }
+
+.Cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Cart li {
+  margin: 5px 0;
+}
+
