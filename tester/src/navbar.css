@@ -91,65 +91,56 @@
     margin-top: 10px; /* Space between the title and cart icon */
   }
 
+  /* Fix Cart Dropdown */
   .Cart-dropdown {
-    width: 270%; /* Make the dropdown 3x larger */
-    max-width: 1200px; /* Increase max width to accommodate larger dropdown */
+    width: 90vw; /* Set the width of the dropdown to 90% of the viewport width */
+    max-width: 400px; /* Add a max-width to prevent it from getting too large */
     top: 60px; /* Slightly lower position for better visibility */
-    padding: 30px; /* Increase padding for larger content */
-    right: -500px; /* Move the dropdown significantly to the right */
-    position: absolute; /* Required for right positioning */
+    right: 0%; /* Position the dropdown to be centered relative to the screen */
+    transform: translateX(90%); /* Center the dropdown horizontally */
+    padding: 20px; /* More padding to avoid content being too cramped */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
   }
 
   .Cart-dropdown h3 {
-    font-size: 48px; /* Increase the size of the heading */
+    font-size: 18px; /* Adjust the size of the heading */
   }
 
   .Cart-dropdown ul li {
-    font-size: 36px; /* Increase font size for list items */
+    font-size: 16px; /* Adjust font size for list items */
   }
 
   .Product-icon {
-    width: 75px; /* Increase the size of product icons */
-    height: 75px;
+    width: 50px; /* Increase the size of product icons */
+    height: 50px;
   }
 
   .Cart-dropdown p {
-    font-size: 36px; /* Increase font size for the paragraph */
+    font-size: 16px; /* Increase font size for the paragraph */
   }
 }
 
-/* Further adjustments for very small devices (e.g., phones in portrait mode) */
-@media (max-width: 480px) {
+/* Media query for mobile devices */
+@media (max-width: 768px) {
 
-  .Top-bar {
-    padding: 8px 10px; /* Reduce padding more for very small screens */
-  }
 
-  .App-title {
-    font-size: 16px; /* Even smaller title font */
-  }
 
-  .Cart-dropdown {
-    width: 300%; /* Full width dropdown 3x larger */
-    top: 70px; /* Adjust top for better visibility */
-    padding: 30px; /* Increase padding */
-    right: -600px; /* Move dropdown further to the right on small screens */
-  }
+
 
   .Cart-dropdown h3 {
-    font-size: 42px; /* Larger heading */
+    font-size: 18px; /* Adjust the size of the heading */
   }
 
   .Cart-dropdown ul li {
-    font-size: 30px; /* Larger font size for list items */
+    font-size: 16px; /* Adjust font size for list items */
   }
 
   .Product-icon {
-    width: 60px; /* Increase product icon size */
-    height: 60px;
+    width: 50px; /* Increase the size of product icons */
+    height: 50px;
   }
 
   .Cart-dropdown p {
-    font-size: 30px; /* Larger font size for the paragraph */
+    font-size: 16px; /* Increase font size for the paragraph */
   }
 }
