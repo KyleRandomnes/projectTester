@@ -15,7 +15,7 @@ function Navbar({ cart, isCartOpen, toggleCartDropdown }) {
                 {cart.map((item, index) => (
                   <li key={index}>
                     <img
-                      src={item.image} // Use the stored product image for each cart item
+                      src={process.env.PUBLIC_URL + item.image} // Use the stored product image for each cart item
                       alt={`${item.size} Shirt`}
                       className="Product-icon"
                     />
