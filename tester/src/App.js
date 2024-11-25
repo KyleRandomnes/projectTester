@@ -8,7 +8,7 @@ function App() {
   // State to store selected sizes
   const [selectedSizes, setSelectedSizes] = useState([]);
   // Product-related state
-  const [productImage, setProductImage] = useState('/planeWhiteT.png'); // Default image for the product
+  const [productImage, setProductImage] = useState(process.env.PUBLIC_URL + '/cart-icon.png'); // Default image for the product
 
   // handles which sizes have been pressed
   const toggleSize = (size) => {
