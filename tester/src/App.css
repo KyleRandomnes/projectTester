@@ -1,3 +1,4 @@
+/* Default styles for PC */
 .App-header {
   display: flex;
   flex-direction: column; /* Ensures header and text are stacked vertically */
@@ -141,3 +142,99 @@ p {
   margin: 5px 0;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+
+  /* Header adjustments for mobile */
+  .App-header {
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  /* Stack product container for mobile */
+  .Product-container {
+    flex-direction: column;
+    align-items: center; /* Centering image and info on smaller screens */
+  }
+
+  .Product-image {
+    width: 100%; /* Make image full width on smaller screens */
+    margin-right: 0; /* Remove margin */
+    margin-bottom: 15px; /* Space between image and text */
+  }
+
+  .Product-info {
+    max-width: 100%;
+  }
+
+  .Size-buttons {
+    flex-wrap: wrap; /* Allow buttons to wrap if there isn't enough space */
+    justify-content: center; /* Center the buttons */
+  }
+
+  .size-btn {
+    padding: 8px 15px;
+    font-size: 1em;
+  }
+
+  .Quantity-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Quantity-slider {
+    width: 100%; /* Make slider full width */
+  }
+
+  .Quantity-input {
+    width: 100px; /* Adjust width of input box */
+    margin-top: 10px; /* Space between slider and input */
+  }
+
+  .add-to-cart-btn {
+    width: 100%; /* Make button full width */
+    padding: 12px;
+  }
+
+  .Cart {
+    margin-top: 15px;
+  }
+
+  .Cart li {
+    font-size: 1.1em; /* Increase font size for readability */
+  }
+}
+
+/* Further adjustments for very small devices (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  .Product-image {
+    width: 90%; /* Make the image almost full width */
+  }
+
+  .Product-info {
+    font-size: 1em; /* Reduce font size of text */
+  }
+
+  .size-btn {
+    font-size: 0.9em;
+    padding: 8px 12px; /* Slightly smaller buttons */
+  }
+
+  .Quantity-input {
+    width: 80px;
+  }
+
+  .add-to-cart-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
