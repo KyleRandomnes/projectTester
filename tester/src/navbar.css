@@ -96,6 +96,8 @@
     max-width: 1200px; /* Increase max width to accommodate larger dropdown */
     top: 60px; /* Slightly lower position for better visibility */
     padding: 30px; /* Increase padding for larger content */
+    right: -500px; /* Move the dropdown significantly to the right */
+    position: absolute; /* Required for right positioning */
   }
 
   .Cart-dropdown h3 {
@@ -131,6 +133,7 @@
     width: 300%; /* Full width dropdown 3x larger */
     top: 70px; /* Adjust top for better visibility */
     padding: 30px; /* Increase padding */
+    right: -600px; /* Move dropdown further to the right on small screens */
   }
 
   .Cart-dropdown h3 {

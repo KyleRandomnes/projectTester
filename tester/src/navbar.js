@@ -15,7 +15,10 @@ function Navbar({ cart, isCartOpen, toggleCartDropdown }) {
                 {cart.map((item, index) => (
                   <li key={index}>
                     <img
-                      src={process.env.PUBLIC_URL + '/' + item.image} // Use the stored product image for each cart item
+                    /* had this working with the image provided in app.js however on the 
+                    *  server side it wouldn't load the image though the variable name, so had to hard code it in
+                    */
+                      src={process.env.PUBLIC_URL + '/planeWhiteT.png'}
                       alt={`${item.size} Shirt`}
                       className="Product-icon"
                     />
