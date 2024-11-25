@@ -74,77 +74,79 @@
     text-align: center;
   }
   
-  /* Media query for mobile devices */
+/* Media query for mobile devices */
 @media (max-width: 768px) {
 
-    .Top-bar {
-      padding: 10px 15px; /* Less padding for smaller screens */
-      flex-direction: column; /* Stack top bar elements vertically */
-      align-items: flex-start; /* Align elements to the left */
-    }
-  
-    .App-title {
-      font-size: 18px; /* Smaller title font for mobile */
-    }
-  
-    .Cart-icon {
-      margin-top: 10px; /* Space between the title and cart icon */
-    }
-  
-    .Cart-dropdown {
-      width: 90%; /* Make the dropdown width responsive */
-      max-width: 400px; /* Limit max width */
-      top: 60px; /* Slightly lower position for better visibility */
-    }
-  
-    .Cart-dropdown h3 {
-      font-size: 16px; /* Slightly smaller heading for mobile */
-    }
-  
-    .Cart-dropdown ul li {
-      font-size: 12px; /* Smaller font size for list items */
-    }
-  
-    .Product-icon {
-      width: 25px; /* Reduce the size of product icons */
-      height: 25px;
-    }
-  
-    .Cart-dropdown p {
-      font-size: 12px; /* Smaller font for the paragraph */
-    }
+  .Top-bar {
+    padding: 10px 15px; /* Less padding for smaller screens */
+    flex-direction: column; /* Stack top bar elements vertically */
+    align-items: flex-start; /* Align elements to the left */
   }
-  
-  /* Further adjustments for very small devices (e.g., phones in portrait mode) */
-  @media (max-width: 480px) {
-  
-    .Top-bar {
-      padding: 8px 10px; /* Reduce padding more for very small screens */
-    }
-  
-    .App-title {
-      font-size: 16px; /* Even smaller title font */
-    }
-  
-    .Cart-dropdown {
-      width: 100%; /* Full width dropdown */
-      top: 70px; /* Adjust top for better visibility */
-    }
-  
-    .Cart-dropdown h3 {
-      font-size: 14px; /* Smaller heading */
-    }
-  
-    .Cart-dropdown ul li {
-      font-size: 10px; /* Further reduce font size */
-    }
-  
-    .Product-icon {
-      width: 20px; /* Smaller product icons */
-      height: 20px;
-    }
-  
-    .Cart-dropdown p {
-      font-size: 10px; /* Smallest font size for the paragraph */
-    }
+
+  .App-title {
+    font-size: 18px; /* Smaller title font for mobile */
   }
+
+  .Cart-icon {
+    margin-top: 10px; /* Space between the title and cart icon */
+  }
+
+  .Cart-dropdown {
+    width: 270%; /* Make the dropdown 3x larger */
+    max-width: 1200px; /* Increase max width to accommodate larger dropdown */
+    top: 60px; /* Slightly lower position for better visibility */
+    padding: 30px; /* Increase padding for larger content */
+  }
+
+  .Cart-dropdown h3 {
+    font-size: 48px; /* Increase the size of the heading */
+  }
+
+  .Cart-dropdown ul li {
+    font-size: 36px; /* Increase font size for list items */
+  }
+
+  .Product-icon {
+    width: 75px; /* Increase the size of product icons */
+    height: 75px;
+  }
+
+  .Cart-dropdown p {
+    font-size: 36px; /* Increase font size for the paragraph */
+  }
+}
+
+/* Further adjustments for very small devices (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+
+  .Top-bar {
+    padding: 8px 10px; /* Reduce padding more for very small screens */
+  }
+
+  .App-title {
+    font-size: 16px; /* Even smaller title font */
+  }
+
+  .Cart-dropdown {
+    width: 300%; /* Full width dropdown 3x larger */
+    top: 70px; /* Adjust top for better visibility */
+    padding: 30px; /* Increase padding */
+  }
+
+  .Cart-dropdown h3 {
+    font-size: 42px; /* Larger heading */
+  }
+
+  .Cart-dropdown ul li {
+    font-size: 30px; /* Larger font size for list items */
+  }
+
+  .Product-icon {
+    width: 60px; /* Increase product icon size */
+    height: 60px;
+  }
+
+  .Cart-dropdown p {
+    font-size: 30px; /* Larger font size for the paragraph */
+  }
+}
