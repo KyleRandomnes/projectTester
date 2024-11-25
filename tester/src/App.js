@@ -72,8 +72,7 @@ function App() {
 
         <div className="Product-container">
           {/* relative path to public folder "Settup"*/}
-          <img src="/planeWhiteT.png" alt="Classic Tee" className="Product-image" />
-
+          <img src={process.env.PUBLIC_URL + '/planeWhiteT.png'} alt="Classic Tee" className="Product-image" />
           <div className="Product-info">
             <h1>Product: Classic Tee</h1>
             {/* Descriptor */}

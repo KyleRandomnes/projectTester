@@ -6,7 +6,7 @@ function Navbar({ cart, isCartOpen, toggleCartDropdown }) {
     <div className="Top-bar">
       <h1 className="App-title">Shop</h1>
       <div className="Cart-icon" onClick={toggleCartDropdown}>
-        <img src="/cart-icon.png" alt="Cart" className="Cart-image" />
+      <img src={process.env.PUBLIC_URL + '/cart-icon.png'} alt="Cart" className="Cart-image" />
         {isCartOpen && (
           <div className="Cart-dropdown">
             <h3>Your Cart</h3>
